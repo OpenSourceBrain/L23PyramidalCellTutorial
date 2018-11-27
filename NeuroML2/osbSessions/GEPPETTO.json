@@ -45,6 +45,7 @@
             "startDate": 1543319856000,
             "endDate": 1543319880000,
             "isPublic": false,
+            "script": "/script.js",
             "view": {
                 "id": 808,
                 "viewStates": {
@@ -66,7 +67,7 @@
                                 "width": 550
                             },
                             "position": {
-                                "left": "70%",
+                                "left": "90%",
                                 "top": "20%"
                             }
                         },
