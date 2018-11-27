@@ -15,11 +15,20 @@
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/1a.html",
             "action": ""
         }, {
-            "title": " A brief introduction to ...",
+            "title": "Properties of the network",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/2.html",
             "action": "$('div.toolbar button :eq(1)').effect('highlight', {}, 6000);showModelDescription(getMainType(network));"
         }, {
-            "title": " More info...",
-            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/3.html"
+            "title": "Properties of the cell",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/3.html",
+            "action": "Popup1.setSize(555.8,600.8);Popup1.setData(Model.neuroml.L23_cADpyr,[GEPPETTO.Resources.HTML_TYPE]);"
+        }, {
+            "title": "Properties of a channel",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/6.html",
+            "action": "Popup1.setData(Model.neuroml.Ca_LVAst,[GEPPETTO.Resources.HTML_TYPE]);"
+        }, {
+            "title": "End of the tutorial",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
+            "action": ""
         }]
 }
