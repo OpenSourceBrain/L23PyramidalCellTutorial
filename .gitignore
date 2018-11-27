@@ -5,3 +5,7 @@
 *.mod
 /NeuroML2/*.hoc
 *_netpyne.py
+/NeuroML2/osbSessions/Project_332/
+/NeuroML2/osbSessions/experiment_1/rawRecording.zip
+/NeuroML2/osbSessions/experiment_1/results_13112018_105412.h5
+/NeuroML2/osbSessions/321.json

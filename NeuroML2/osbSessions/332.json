@@ -1,0 +1,223 @@
+{
+	"id": 332,
+	"name": "l23pyramidalcelltutorial",
+	"experiments": [ {
+		"id": 605,
+		"aspectConfigurations": [{
+			"id": 602,
+			"instance": "network",
+			"watchedVariables": ["network.Pop_cADpyr[0].Seg0_soma_0_0.v", "network.Pop_cADpyr[0].Seg1_axon_1_1148.v", "network.Pop_cADpyr[0].Seg11_apic_14_952.v", "network.Pop_cADpyr[0].Seg11_apic_21_1098.v"],
+			"modelParameters": [],
+			"simulatorConfiguration": {
+				"id": 600,
+				"simulatorId": "neuronSimulator",
+				"timestep": 2.5E-5,
+				"length": 3.5,
+				"parameters": {
+					"target": "network"
+				}
+			}
+		}],
+		"name": "Depolarizing current pulse",
+		"description": "",
+		"creationDate": 1543319792000,
+		"lastModified": 1543319856000,
+		"status": "COMPLETED",
+		"simulationResults": [{
+			"id": 775,
+			"simulatedInstance": "network",
+			"result": {
+				"id": 1109,
+				"url": "/experiment_605/results_27112018_115756.h5",
+				"type": "RECORDING"
+			},
+			"format": "GEPPETTO_RECORDING"
+		}, {
+			"id": 776,
+			"simulatedInstance": "network",
+			"result": {
+				"id": 1110,
+				"url": "/experiment_605/rawRecording.zip",
+				"type": "RECORDING"
+			},
+			"format": "RAW"
+		}],
+		"startDate": 1543319856000,
+		"endDate": 1543319880000,
+		"isPublic": false,
+		"view": {
+			"id": 808,
+			"viewStates": {
+				"views": {
+					"Tutorial1": {
+						"widgetType": "TUTORIAL",
+						"isWidget": true,
+						"dataType": "array",
+						"data": [],
+						"componentSpecific": {
+							"activeTutorial": "Open Source Brain Tutorial",
+							"currentStep": 0
+						},
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": "50%",
+							"top": "50%"
+						}
+					},
+					"Canvas1": {
+						"widgetType": "CANVAS",
+						"isWidget": false,
+						"dataType": "instances",
+						"data": ["network"],
+						"componentSpecific": {
+							"cameraPosition": {
+								"x": 5.815,
+								"y": 97.75,
+								"z": 788.416
+							},
+							"cameraRotation": {
+								"rx": 0,
+								"ry": 0,
+								"rz": 0,
+								"radius": 781.12
+							},
+							"colorMap": {
+								"network.Pop_cADpyr": "#990000"
+							},
+							"opacityMap": {},
+							"geometryTypeMap": {},
+							"hoverListeners": [],
+							"backgroundColor": "0x101010"
+						}
+					}
+				}
+			}
+		}
+	}, {
+		"id": 606,
+		"aspectConfigurations": [{
+			"id": 603,
+			"instance": "network",
+			"watchedVariables": ["network.Pop_cADpyr[0].Seg0_soma_0_0.v", "network.Pop_cADpyr[0].Seg1_axon_1_1148.v", "network.Pop_cADpyr[0].Seg11_apic_14_952.v", "network.Pop_cADpyr[0].Seg11_apic_21_1098.v"],
+			"modelParameters": [{
+				"id": 408,
+				"variable": "neuroml.L23_cADpyr.transient_pulse_current.amplitude",
+				"value": "-100"
+			}],
+			"simulatorConfiguration": {
+				"id": 601,
+				"simulatorId": "neuronSimulator",
+				"timestep": 2.5E-5,
+				"length": 3.5,
+				"parameters": {
+					"target": "network"
+				}
+			}
+		}],
+		"name": "Hyperpolarizing current pulse",
+		"description": "",
+		"creationDate": 1543319955000,
+		"lastModified": 1543320058000,
+		"status": "COMPLETED",
+		"simulationResults": [{
+			"id": 777,
+			"simulatedInstance": "network",
+			"result": {
+				"id": 1111,
+				"url": "/experiment_606/results_27112018_120118.h5",
+				"type": "RECORDING"
+			},
+			"format": "GEPPETTO_RECORDING"
+		}, {
+			"id": 778,
+			"simulatedInstance": "network",
+			"result": {
+				"id": 1112,
+				"url": "/experiment_606/rawRecording.zip",
+				"type": "RECORDING"
+			},
+			"format": "RAW"
+		}],
+		"startDate": 1543320058000,
+		"endDate": 1543320087000,
+		"isPublic": false,
+		"view": {
+			"id": 809,
+			"viewStates": {
+				"views": {
+					"Tutorial1": {
+						"widgetType": "TUTORIAL",
+						"isWidget": true,
+						"dataType": "array",
+						"data": [],
+						"componentSpecific": {
+							"activeTutorial": "Open Source Brain Tutorial",
+							"currentStep": 0
+						},
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": "50%",
+							"top": "50%"
+						}
+					},
+					"Canvas1": {
+						"widgetType": "CANVAS",
+						"isWidget": false,
+						"dataType": "instances",
+						"data": ["network"],
+						"componentSpecific": {
+							"cameraPosition": {
+								"x": 2.825,
+								"y": 17.073,
+								"z": 468.405
+							},
+							"cameraRotation": {
+								"rx": 0.217,
+								"ry": 0.025,
+								"rz": 0.322,
+								"radius": 467.58
+							},
+							"colorMap": {
+								"network.Pop_cADpyr": "#990000"
+							},
+							"opacityMap": {},
+							"geometryTypeMap": {},
+							"hoverListeners": [],
+							"backgroundColor": "0x101010"
+						}
+					}
+				}
+			}
+		}
+	}],
+	"activeExperimentId": 605,
+	"geppettoModel": {
+		"id": 1106,
+		"url": "/L23_cADpyr_MODELdd9593b40c62c616775b98b5a279816e.xmi",
+		"type": "GEPPETTO_PROJECT"
+	},
+	"isPublic": false,
+	"isReadOnly": false,
+	"view": {
+		"id": 807,
+		"viewStates": {
+			"views": {
+				"Canvas1": {
+					"widgetType": "CANVAS",
+					"componentSpecific": {
+						"radiusMap": {},
+						"colorMap": {
+							"network.Pop_cADpyr": "#990000"
+						}
+					}
+				}
+			}
+		}
+	}
+}
