@@ -13,7 +13,7 @@
         }, {
             "title": " A brief introduction to ...",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/2.html",
-            "action": "$('div.toolbar button :eq(1)').effect('highlight', {}, 6000);showModelDescription(getMainType(network));Popup1.setPosition(986,149)"
+            "action": "$('div.toolbar button :eq(1)').effect('highlight', {}, 6000);showModelDescription(getMainType(network));"
         }, {
             "title": " More info...",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/3.html"
