@@ -1,0 +1,7 @@
+/NeuroML2/.mod
+/NeuroML2/*.dat
+*_nrn.py
+/NeuroML2/x86_64
+*.mod
+/NeuroML2/*.hoc
+*_netpyne.py
