@@ -25,7 +25,7 @@
         }, {
             "title": "Properties of a channel",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/6.html",
-            "action": "Popup1.setData(Model.neuroml.Ca_LVAst,[GEPPETTO.Resources.HTML_TYPE]);"
+            "action": "Popup1.setData(Model.neuroml.K_Pst,[GEPPETTO.Resources.HTML_TYPE]);"
         }, {
             "title": "End of the tutorial",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
