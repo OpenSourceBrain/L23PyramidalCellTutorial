@@ -32,11 +32,17 @@
     <Simulation id="L23_PC_cADpyr" length="3000ms" step="0.025ms" target="network" seed="1234">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="DispPop__Pop_cADpyr" title="Membrane potentials of cells in Pop_cADpyr" timeScale="1ms" xmin="-300.0" xmax="3300.0" ymin="-90" ymax="50">
-            <Line id="Pop_cADpyr[0]: v" quantity="Pop_cADpyr/0/L23_cADpyr/v" scale="1mV" color="#0b45e0" timeScale="1ms"/>
+            <Line id="Soma v" quantity="Pop_cADpyr/0/L23_cADpyr/0/v" scale="1mV" color="#0b45e0" timeScale="1ms"/>
+            <Line id="Axon v" quantity="Pop_cADpyr/0/L23_cADpyr/1148/v" scale="1mV" color="#ff6600" timeScale="1ms"/>
+            <Line id="Dend shaft v" quantity="Pop_cADpyr/0/L23_cADpyr/952/v" scale="1mV" color="#00ff00" timeScale="1ms"/>
+            <Line id="Dend tip v" quantity="Pop_cADpyr/0/L23_cADpyr/1098/v" scale="1mV" color="#44ff44" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file__Pop_cADpyr" fileName="L23_PC_cADpyr.v.dat">
-            <OutputColumn id="v_Pop_cADpyr_v" quantity="Pop_cADpyr/0/L23_cADpyr/v"/> 
+            <OutputColumn id="v_Pop_cADpyr_v" quantity="Pop_cADpyr/0/L23_cADpyr/0/v"/> 
+            <OutputColumn id="v_Pop_cADpyr_v1148" quantity="Pop_cADpyr/0/L23_cADpyr/1148/v"/> 
+            <OutputColumn id="v_Pop_cADpyr_v952" quantity="Pop_cADpyr/0/L23_cADpyr/952/v"/> 
+            <OutputColumn id="v_Pop_cADpyr_v1098" quantity="Pop_cADpyr/0/L23_cADpyr/1098/v"/> 
         </OutputFile>
         
     </Simulation>

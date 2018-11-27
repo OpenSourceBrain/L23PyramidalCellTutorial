@@ -7,8 +7,8 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
 
 </notes>
     <include href="L23_cADpyr.cell.nml"></include>
-    <pulseGenerator id="stepcurrent3_hyp" delay="0ms" duration="3000ms" amplitude="-0.071777nA"/>
-    <pulseGenerator id="stepcurrent3" delay="700ms" duration="2000ms" amplitude="0.1897924nA"/>
+    <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
+    <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
     <network id="network" type="networkWithTemperature" temperature="34 degC">
         <population id="Pop_cADpyr" component="L23_cADpyr" size="1" type="populationList">
             <property tag="region" value="L23"/>
@@ -17,10 +17,10 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
                 <location x="0." y="0." z="0."/>
             </instance>
         </population>
-        <inputList id="stepcurrent3_hyp_input" population="Pop_cADpyr" component="stepcurrent3_hyp">
+        <inputList id="hyp_input" population="Pop_cADpyr" component="constant_hyperpolarizing_current">
             <input id="0" target="../Pop_cADpyr/0/L23_cADpyr" destination="synapses"/>
         </inputList>
-        <inputList id="stepcurrent3_input" population="Pop_cADpyr" component="stepcurrent3">
+        <inputList id="step_input" population="Pop_cADpyr" component="transient_pulse_current">
             <input id="0" target="../Pop_cADpyr/0/L23_cADpyr" destination="synapses"/>
         </inputList>
     </network>
