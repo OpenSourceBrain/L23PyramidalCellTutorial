@@ -1,0 +1,18 @@
+<div>
+
+    <p><strong>Changing the current</strong></p>
+    
+    <p>Try changing the input current.</p> 
+    
+    
+    <div class="tutorialForm center">
+        <div class="tutorialLabel">Input current (nA)</div> <input id="currentValue" type="text" value="180"></input></br>
+        <button class="btn" id="changeCurrent" onclick="quickExperiment('IClamp',
+            {
+                i:{'Model.neuroml.L23_cADpyr.transient_pulse_current.amplitude':$('#currentValue').val()}
+            }
+        );">Try!</button>
+</div>
+		
+    
+</div>
