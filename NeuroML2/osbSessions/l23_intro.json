@@ -35,6 +35,18 @@
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/6.html",
             "action": "Popup1.setData(Model.neuroml.K_Tst,[GEPPETTO.Resources.HTML_TYPE]);"
         }, {
+            "title": "Simulating the model",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/7.html",
+            "action": "Popup1.hide();"
+        }, {
+            "title": "Simulating the model",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/7a.html",
+            "action": ""
+        },  {
+            "title": "Simulating the model",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/8.html",
+        "action": "$('.tabButton:contains(\"Experiments\")').click();"
+        }, {
             "title": "End of the tutorial",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
             "action": ""
