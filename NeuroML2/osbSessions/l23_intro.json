@@ -61,11 +61,19 @@
         }, {
             "title": "Membrane potential traces - hyperpolarization",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/12.html",
-            "action": "Controlpanel1.open(); Controlpanel1.setTab(Controlpanel1.filterOptions.ANY_EXPERIMENT_RECORDED_STATE_VARIABLES); "
+            "action": "Controlpanel1.open(); Controlpanel1.setTab(Controlpanel1.filterOptions.ACTIVE_STATE_VARIABLES); Controlpanel1.setTab(Controlpanel1.filterOptions.ACTIVE_RECORDED_STATE_VARIABLES); Controlpanel1.setTab(Controlpanel1.filterOptions.ANY_EXPERIMENT_RECORDED_STATE_VARIABLES);"
         }, {
             "title": "Running simulations",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/13.html",
             "action": "Controlpanel1.close();"
+        }, {
+            "title": "Running simulations",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/14.html",
+            "action": ""
+        }, {
+            "title": "Running simulations",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/15.html",
+            "action": "$('.tabButton:contains(\"Experiments\")').click();"
         }, {
             "title": "End of the tutorial",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
