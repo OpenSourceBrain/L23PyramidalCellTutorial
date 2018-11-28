@@ -51,6 +51,10 @@
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/9.html",
             "action": "window.plotAllRecordedVariables();Plot1.setPosition(97,86);Plot1.setSize(525.8,558.8)"
         }, {
+            "title": "Membrane potential traces",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/10.html",
+            "action": ""
+        }, {
             "title": "End of the tutorial",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
             "action": ""
