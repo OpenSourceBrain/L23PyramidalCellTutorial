@@ -23,6 +23,10 @@
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/3.html",
             "action": "Popup1.setSize(555.8,600.8);Popup1.setPosition(59,66);Popup1.setData(Model.neuroml.L23_cADpyr,[GEPPETTO.Resources.HTML_TYPE]);"
         }, {
+            "title": "Properties of the cell",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/4.html",
+            "action": ""
+        }, {
             "title": "Properties of a channel",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/6.html",
             "action": "Popup1.setData(Model.neuroml.K_Pst,[GEPPETTO.Resources.HTML_TYPE]);"
