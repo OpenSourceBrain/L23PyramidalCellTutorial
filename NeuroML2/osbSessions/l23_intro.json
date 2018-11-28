@@ -28,8 +28,12 @@
             "action": ""
         }, {
             "title": "Properties of a channel",
-            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/6.html",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/5.html",
             "action": "Popup1.setData(Model.neuroml.K_Pst,[GEPPETTO.Resources.HTML_TYPE]);"
+        }, {
+            "title": "Properties of a channel",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/6.html",
+            "action": "Popup1.setData(Model.neuroml.K_Tst,[GEPPETTO.Resources.HTML_TYPE]);"
         }, {
             "title": "End of the tutorial",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
