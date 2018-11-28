@@ -55,6 +55,18 @@
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/10.html",
             "action": ""
         }, {
+            "title": "Membrane potential traces - hyperpolarization",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/11.html",
+            "action": ""
+        }, {
+            "title": "Membrane potential traces - hyperpolarization",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/12.html",
+            "action": ""
+        }, {
+            "title": "Running simulations",
+            "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/13.html",
+            "action": ""
+        }, {
             "title": "End of the tutorial",
             "content_url": "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/last.html",
             "action": ""
