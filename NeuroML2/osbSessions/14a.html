@@ -1,18 +1,31 @@
 <div>
 
-    <p><strong>Changing the current</strong></p>
+    <p><strong>Changing the current input</strong></p>
     
-    <p>Try changing the input current.</p> 
+    <p>Try adjusting the current input (amplitude and timing) to the cell and running a simulation.</p> 
     
     
     <div class="tutorialForm center">
-        <div class="tutorialLabel">Input current (nA)</div> <input id="currentValue" type="text" value="180"></input></br>
+        <div class="tutorialLabel">Input current (pA)</div> <input id="iAmp" type="text" value="180"></input></br>
+        <div class="tutorialLabel">Delay (ms)</div> <input id="iDel" type="text" value="700"></input></br>
+        <div class="tutorialLabel">Duration (ms)</div> <input id="iDur" type="text" value="2000"></input></br>
+        
         <button class="btn" id="changeCurrent" onclick="quickExperiment('IClamp',
             {
-                i:{'Model.neuroml.L23_cADpyr.transient_pulse_current.amplitude':$('#currentValue').val()}
+                iamp:{'Model.neuroml.L23_cADpyr.transient_pulse_current.amplitude':$('#iAmp').val()},
+                idel:{'Model.neuroml.L23_cADpyr.transient_pulse_current.delay':$('#iDel').val()},
+                idur:{'Model.neuroml.L23_cADpyr.transient_pulse_current.duration':$('#iDur').val()}
             }
-        );">Try!</button>
+        );">Try it!</button>
 </div>
+    
+    <p>When an experiment is set running, the status icon in the Experiments tab will change 
+        from <i class="fa fa-circle" style="color:#ff5a02"></i> (pre simulation; experiment design phase), 
+        to <i class="fa fa-circle" style="color:#0199e8"></i> (in the queue on our servers), 
+        to <i class="fa fa-circle" style="color:#ffcc00"></i> (running), 
+        and finally to <i class="fa fa-circle" style="color:#649615"></i> (completed). 
+        It will show <i class="fa fa-circle" style="color:red"></i> if there has been a problem running the simulation.</p>
+    
 		
     
 </div>
