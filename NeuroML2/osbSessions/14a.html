@@ -4,11 +4,17 @@
     
     <p>Try adjusting the amplitude and timing of the current input to the cell and running a simulation.</p> 
     
+    <p>The status icon for experiments will change 
+        from <i class="fa fa-circle" style="color:#ff5a02"></i> (pre simulation; experiment design phase), 
+        to <i class="fa fa-circle" style="color:#0199e8"></i> (in the queue on our servers), 
+        to <i class="fa fa-circle" style="color:#ffcc00"></i> (running), 
+        and finally to <i class="fa fa-circle" style="color:#649615"></i> (completed),
+        or <i class="fa fa-circle" style="color:red"></i> if there has been a problem running the simulation.</p>
     
     <div class="tutorialForm center">
-        <div class="tutorialLabel">Input current (pA)</div> <input id="iAmp" type="text" value="180"></input></br>
-        <div class="tutorialLabel">Delay (ms)</div> <input id="iDel" type="text" value="700"></input></br>
-        <div class="tutorialLabel">Duration (ms)</div> <input id="iDur" type="text" value="2000"></input></br>
+        <strong>Input current (pA)</strong> <input id="iAmp" type="text" value="180"></input><br/>
+        <strong>Delay (ms)</strong> <input id="iDel" type="text" value="700"></input><br/>
+        <strong>Duration (ms)</strong> <input id="iDur" type="text" value="2000"></input><br/>
         
         <button class="btn" id="changeCurrent" onclick="quickExperiment('IClamp',
             {
@@ -16,17 +22,11 @@
                 idel:{'Model.neuroml.L23_cADpyr.transient_pulse_current.delay':$('#iDel').val()},
                 idur:{'Model.neuroml.L23_cADpyr.transient_pulse_current.duration':$('#iDur').val()}
             }
-        );">Try it!</button><br/>
+        );"><i class="fa fa-exclamation-circle" aria-hidden="true" style="color:#dd0000"></i> Try it!</button><br/>
 </div>
     
     <div>
     
-    <p>The status icon for experiments will change 
-        from <i class="fa fa-circle" style="color:#ff5a02"></i> (pre simulation; experiment design phase), 
-        to <i class="fa fa-circle" style="color:#0199e8"></i> (in the queue on our servers), 
-        to <i class="fa fa-circle" style="color:#ffcc00"></i> (running), 
-        and finally to <i class="fa fa-circle" style="color:#649615"></i> (completed),
-        or <i class="fa fa-circle" style="color:red"></i> if there has been a problem running the simulation.</p>
     
     </div>
     
