@@ -69,7 +69,8 @@
                             "position": {
                                 "left": "90%",
                                 "top": "20%"
-                            }
+                            },
+			    "force_show": true
                         },
                         "Canvas1": {
                             "widgetType": "CANVAS",
