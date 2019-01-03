@@ -70,7 +70,7 @@
                                 "left": "90%",
                                 "top": "20%"
                             },
-			    "force_show": true
+                            "force_show": true
                         },
                         "Canvas1": {
                             "widgetType": "CANVAS",
@@ -92,6 +92,7 @@
                                 "colorMap": {
                                     "network.Pop_cADpyr": "#990000"
                                 },
+                                "colorFunctionMap": {},
                                 "opacityMap": {},
                                 "geometryTypeMap": {},
                                 "hoverListeners": [],
@@ -191,6 +192,7 @@
                                 "colorMap": {
                                     "network.Pop_cADpyr": "#990000"
                                 },
+                                "colorFunctionMap": {},
                                 "opacityMap": {},
                                 "geometryTypeMap": {},
                                 "hoverListeners": [],
