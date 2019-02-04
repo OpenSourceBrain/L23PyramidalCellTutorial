@@ -6,4 +6,6 @@ Uses a detailed Layer 2/3 Pyramidal cell from the [Blue Brain Project Neocortica
 
 **To follow this tutorial, please click [here](http://www.opensourcebrain.org/projects/l23pyramidalcelltutorial/models?explorer=https%253A%252F%252Fraw.githubusercontent.com%252FOpenSourceBrain%252FL23PyramidalCellTutorial%252Fmaster%252FNeuroML2%252FosbSessions%252FGEPPETTO.json).**
 
+![Screenshot](https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/images/L23.png)
+
 [![Build Status](https://travis-ci.org/OpenSourceBrain/L23PyramidalCellTutorial.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/L23PyramidalCellTutorial)
