@@ -3,14 +3,22 @@
     <p><strong>Changing the conductance densities</strong></p>
     
 
-    <p>Try changing the conductance densities of some of the ion channels below.</p> 
+    <p>Try changing the conductance densities of some of the ion channels below. Some scenarios to try:</p>
+    
+    <p><strong>&nbsp;> Remove the high transient Na<sup>+</sup> conductance on the axon</strong> <br/>
+        Setting this value to 0 should lead to reduced firing frequency. However there is still a persistent Na<sup>+</sup> and so a gradual depolarisation leading to spiking...</p>
+    
+    <p><strong>&nbsp;> Remove the persistent Na<sup>+</sup> conductance on the axon</strong> <br/>
+        This removes all spiking in the cell.</p>
     
     <div class="tutorialForm center">
         
-        <div class="tutorialLabel" style="width:300px">Fast, transient Na<sup>+</sup> conductance on <strong>axon</strong> (S/cm2) <input id="axonal_gNaTa_tbar_NaTa_t" type="text" value="3.429725"></input></div>
-        <div class="tutorialLabel" style="width:300px">Persistent Na<sup>+</sup> conductance on <strong>axon</strong> (S/cm2) <input id="axonal_gNap_Et2bar_Nap_Et2" type="text" value="0.009803"></input></div>
+        <div class="tutorialLabel" style="width:300px">Fast, transient Na<sup>+</sup> conductance on axon (S/cm2) <input id="axonal_gNaTa_tbar_NaTa_t" type="text" value="3.429725"></input></div>
+        <div class="tutorialLabel" style="width:300px">Persistent Na<sup>+</sup> conductance on axon (S/cm2) <input id="axonal_gNap_Et2bar_Nap_Et2" type="text" value="0.009803"></input></div>
         
-        <div class="tutorialLabel" style="width:300px">Persistent K<sup>+</sup> conductance on <strong>axon</strong> (S/cm2)<input id="axonal_gK_Pstbar_K_Pst" type="text" value="0.959296"></input></div> 
+        <div class="tutorialLabel" style="width:300px">Persistent K<sup>+</sup> conductance on axon (S/cm2)<input id="axonal_gK_Pstbar_K_Pst" type="text" value="0.959296"></input></div> 
+        
+        <div class="tutorialLabel" style="width:300px">Axial resistance (resistivity) on whole cell (Ohm cm)<input id="resistivity" type="text" value="100"></input></div> 
         
         
         <div class="tutorialLabel">Input current (pA) <input id="iAmp" type="text" value="180"> </input></div>
@@ -23,6 +31,8 @@
                 axonal_Nap:{'Model.neuroml.L23_cADpyr.biophys.membraneProperties.axonal_gNap_Et2bar_Nap_Et2.condDensity':$('#axonal_gNap_Et2bar_Nap_Et2').val()},
                 axonal_K_Pst:{'Model.neuroml.L23_cADpyr.biophys.membraneProperties.axonal_gK_Pstbar_K_Pst.condDensity':$('#axonal_gK_Pstbar_K_Pst').val()},
                 
+                resistivity:{'Model.neuroml.L23_cADpyr.biophys.intracellularProperties.resistivity.value':$('#resistivity').val()},
+                
                 iamp:{'Model.neuroml.L23_cADpyr.transient_pulse_current.amplitude':$('#iAmp').val()},
                 idel:{'Model.neuroml.L23_cADpyr.transient_pulse_current.delay':$('#iDel').val()},
                 idur:{'Model.neuroml.L23_cADpyr.transient_pulse_current.duration':$('#iDur').val()}
@@ -30,13 +40,6 @@
         );"><i class="fa fa-exclamation-circle" aria-hidden="true" style="color:#dd0000"></i> Try it!</button><br/>
 </div>
     
-    <p>Some configurations to try:</p>
-    
-    <p><strong>&nbsp;> Remove the high transient Na<sup>+</sup> conductance on the axon</strong> <br/>
-        Setting this value to 0 should lead to reduced firing frequency. However there is still a persistent Na<sup>+</sup> and so a gradual depolarisation leading to spiking...</p>
-    
-    <p><strong>&nbsp;> Remove the persistent Na<sup>+</sup> conductance on the axon</strong> <br/>
-        This removes all spiking in the cell.</p>
     
     
 </div>
