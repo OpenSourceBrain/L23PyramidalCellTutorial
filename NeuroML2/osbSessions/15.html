@@ -3,20 +3,19 @@
     <p><strong>Changing the conductance densities</strong></p>
     
 
-    <p>Change...</p> 
+    <p>Try changing the conductance densities of some of the ion channels below.</p> 
     
     <div class="tutorialForm center">
         
-        <div class="tutorialLabel" style="width:300px">Transient Na<sup>+</sup> current on <strong>axon</strong> (S/cm2) <input id="axonal_gNaTa_tbar_NaTa_t" type="text" value="3.429725" style="width:200px"></input></div>
-        <div class="tutorialLabel" style="width:300px">Persistent Na<sup>+</sup> current on <strong>axon</strong> (S/cm2) <input id="axonal_gNap_Et2bar_Nap_Et2" type="text" value="0.009803" style="width:100px"></input></div></br>
+        <div class="tutorialLabel" style="width:300px">Fast, transient Na<sup>+</sup> conductance on <strong>axon</strong> (S/cm2) <input id="axonal_gNaTa_tbar_NaTa_t" type="text" value="3.429725"></input></div>
+        <div class="tutorialLabel" style="width:300px">Persistent Na<sup>+</sup> conductance on <strong>axon</strong> (S/cm2) <input id="axonal_gNap_Et2bar_Nap_Et2" type="text" value="0.009803"></input></div>
         
-        <div class="tutorialLabel" style="width:400px">Persistent K<sup>+</sup> current on <strong>axon</strong> (S/cm2)</div> <input id="axonal_gK_Pstbar_K_Pst" type="text" value="0.959296"></input></br>
+        <div class="tutorialLabel" style="width:300px">Persistent K<sup>+</sup> conductance on <strong>axon</strong> (S/cm2)<input id="axonal_gK_Pstbar_K_Pst" type="text" value="0.959296"></input></div> 
         
         
-        
-        <div class="tutorialLabel">Input current (pA)</div> <input id="iAmp" type="text" value="180"></input></br>
-        <div class="tutorialLabel">Delay (ms)</div> <input id="iDel" type="text" value="700"></input></br>
-        <div class="tutorialLabel">Duration (ms)</div> <input id="iDur" type="text" value="2000"></input></br>
+        <div class="tutorialLabel">Input current (pA) <input id="iAmp" type="text" value="180"> </input></div>
+        <div class="tutorialLabel">Delay (ms) <input id="iDel" type="text" value="700"></input></div>
+        <div class="tutorialLabel">Duration (ms) <input id="iDur" type="text" value="2000"></input></div>
         
         <button class="btn" id="changeConds" onclick="quickExperiment('ConductanceDensities',
             {
@@ -30,5 +29,14 @@
             }
         );"><i class="fa fa-exclamation-circle" aria-hidden="true" style="color:#dd0000"></i> Try it!</button><br/>
 </div>
+    
+    <p>Some configurations to try:</p>
+    
+    <p><strong>&nbsp;> Remove the high transient Na<sup>+</sup> conductance on the axon</strong> <br/>
+        Setting this value to 0 should lead to reduced firing frequency. However there is still a persistent Na<sup>+</sup> and so a gradual depolarisation leading to spiking...</p>
+    
+    <p><strong>&nbsp;> Remove the persistent Na<sup>+</sup> conductance on the axon</strong> <br/>
+        This removes all spiking in the cell.</p>
+    
     
 </div>
