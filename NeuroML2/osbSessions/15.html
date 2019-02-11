@@ -7,7 +7,6 @@
     
     <div class="tutorialForm center">
         
-        
         <div class="tutorialLabel">Transient Na<sup>+</sup> current on <strong>axon</strong> (S/cm2)</div> <input id="axonal_gNaTa_tbar_NaTa_t" type="text" value="3.429725"></input></br>
         <div class="tutorialLabel">Persistent Na<sup>+</sup> current on <strong>axon</strong> (S/cm2)</div> <input id="axonal_gNap_Et2bar_Nap_Et2" type="text" value="0.009803"></input></br>
         
@@ -16,10 +15,10 @@
         <div class="tutorialLabel">Delay (ms)</div> <input id="iDel" type="text" value="700"></input></br>
         <div class="tutorialLabel">Duration (ms)</div> <input id="iDur" type="text" value="2000"></input></br>
         
-        <button class="btn" id="changeCurrent" onclick="quickExperiment('Conductance densities',
+        <button class="btn" id="changeConds" onclick="quickExperiment('ConductanceDensities',
             {
-                axonal_gNaTa_tbar_NaTa_t:{'neuroml.L23_cADpyr.biophys.membraneProperties.axonal_gNaTa_tbar_NaTa_t.condDensity':$('#axonal_gNaTa_tbar_NaTa_t').val()},
-                axonal_gNap_Et2bar_Nap_Et2:{'neuroml.L23_cADpyr.biophys.membraneProperties.axonal_gNap_Et2bar_Nap_Et2.condDensity':$('#axonal_gNap_Et2bar_Nap_Et2').val()},
+                axonal_NaTa_t:{'Model.neuroml.L23_cADpyr.biophys.membraneProperties.axonal_gNaTa_tbar_NaTa_t.condDensity':$('#axonal_gNaTa_tbar_NaTa_t').val()},
+                axonal_Nap_Et2:{'Model.neuroml.L23_cADpyr.biophys.membraneProperties.axonal_gNap_Et2bar_Nap_Et2.condDensity':$('#axonal_gNap_Et2bar_Nap_Et2').val()},
                 iamp:{'Model.neuroml.L23_cADpyr.transient_pulse_current.amplitude':$('#iAmp').val()},
                 idel:{'Model.neuroml.L23_cADpyr.transient_pulse_current.delay':$('#iDel').val()},
                 idur:{'Model.neuroml.L23_cADpyr.transient_pulse_current.duration':$('#iDur').val()}
