@@ -7067,6 +7067,13 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
                 
                 <channelDensity id="somatic_gIhbar_Ih" ionChannel="Ih" condDensity="8e-05 S_per_cm2" erev="-45.0 mV" segmentGroup="somatic" ion="hcn"/>
                 <channelDensity id="basal_gIhbar_Ih" ionChannel="Ih" condDensity="8e-05 S_per_cm2" erev="-45.0 mV" segmentGroup="basal" ion="hcn"/>
+                
+                <channelDensityNernst id="axonal_gCa_HVAbar_Ca_HVA" ionChannel="Ca_HVA" condDensity="0.000306 S_per_cm2" segmentGroup="axonal" ion="ca"/>
+                <channelDensityNernst id="axonal_gCa_LVAstbar_Ca_LVAst" ionChannel="Ca_LVAst" condDensity="5e-05 S_per_cm2" segmentGroup="axonal" ion="ca"/>
+                <channelDensityNernst id="somatic_gCa_HVAbar_Ca_HVA" ionChannel="Ca_HVA" condDensity="0.000374 S_per_cm2" segmentGroup="somatic" ion="ca"/>
+                <channelDensityNernst id="somatic_gCa_LVAstbar_Ca_LVAst" ionChannel="Ca_LVAst" condDensity="0.000778 S_per_cm2" segmentGroup="somatic" ion="ca"/>
+                
+                
                 <channelDensityNonUniform id="apical_gIhbar_Ih" ionChannel="Ih" erev="-45.0 mV" ion="hcn">
                     <variableParameter parameter="condDensity" segmentGroup="apical">
                         <inhomogeneousValue inhomogeneousParameter="PathLengthOver_apical" value="1e4 * ((-0.869600 + 2.087000*exp((p-0.000000)*0.003100))*0.000080)"/>
@@ -7074,12 +7081,6 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
                 </channelDensityNonUniform>
                 
                
-                <channelDensityNernst id="axonal_gCa_HVAbar_Ca_HVA" ionChannel="Ca_HVA" condDensity="0.000306 S_per_cm2" segmentGroup="axonal" ion="ca"/>
-                <channelDensityNernst id="axonal_gCa_LVAstbar_Ca_LVAst" ionChannel="Ca_LVAst" condDensity="5e-05 S_per_cm2" segmentGroup="axonal" ion="ca"/>
-                <channelDensityNernst id="somatic_gCa_HVAbar_Ca_HVA" ionChannel="Ca_HVA" condDensity="0.000374 S_per_cm2" segmentGroup="somatic" ion="ca"/>
-                <channelDensityNernst id="somatic_gCa_LVAstbar_Ca_LVAst" ionChannel="Ca_LVAst" condDensity="0.000778 S_per_cm2" segmentGroup="somatic" ion="ca"/>
-                
-                
                 <specificCapacitance value="2 uF_per_cm2" segmentGroup="basal"/>
                 <specificCapacitance value="2 uF_per_cm2" segmentGroup="apical"/>
                 <specificCapacitance value="1.0 uF_per_cm2" segmentGroup="axonal"/>
