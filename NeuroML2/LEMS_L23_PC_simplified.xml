@@ -1,0 +1,37 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.3.5 (libNeuroML v0.2.36)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_L23_PC_simplified"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="L23_PC_simplified.net.nml"/>
+   
+    <Simulation id="Sim_L23_PC_simplified" length="3000ms" step="0.025ms" target="network" seed="1234">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="DispPop__Pop_PC_simplified" title="Membrane potentials of cells in Pop_PC_simplified" timeScale="1ms" xmin="-300.0" xmax="3300.0" ymin="-90" ymax="50">
+            <Line id="Soma v" quantity="Pop_PC_simplified/0/L23_PC_simplified/0/v" scale="1mV" color="#0b45e0" timeScale="1ms"/>
+            <Line id="Axon v" quantity="Pop_PC_simplified/0/L23_PC_simplified/1148/v" scale="1mV" color="#ff6600" timeScale="1ms"/>
+            <Line id="Dend shaft v" quantity="Pop_PC_simplified/0/L23_PC_simplified/952/v" scale="1mV" color="#00ff00" timeScale="1ms"/>
+            <Line id="Dend tip v" quantity="Pop_PC_simplified/0/L23_PC_simplified/1098/v" scale="1mV" color="#44ff44" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file__Pop_PC_simplified" fileName="L23_PC_simplified.v.dat">
+            <OutputColumn id="v_Pop_PC_simplified_v" quantity="Pop_PC_simplified/0/L23_PC_simplified/0/v"/> 
+            <OutputColumn id="v_Pop_PC_simplified_v1148" quantity="Pop_PC_simplified/0/L23_PC_simplified/1148/v"/> 
+            <OutputColumn id="v_Pop_PC_simplified_v952" quantity="Pop_PC_simplified/0/L23_PC_simplified/952/v"/> 
+            <OutputColumn id="v_Pop_PC_simplified_v1098" quantity="Pop_PC_simplified/0/L23_PC_simplified/1098/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>

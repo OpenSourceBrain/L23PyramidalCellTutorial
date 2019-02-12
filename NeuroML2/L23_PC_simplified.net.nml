@@ -1,0 +1,27 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="NeuroML2_file_exported_from_NEURON">
+    <notes>
+
+Export of a cell model obtained from the BBP NeocorticalMicrocircuit Collaboration Portal into NeuroML2
+
+For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_PC_simplified/details
+
+</notes>
+    <include href="L23_PC_simplified.cell.nml"></include>
+    <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
+    <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
+    <network id="network" type="networkWithTemperature" temperature="34 degC">
+        <population id="Pop_PC_simplified" component="L23_PC_simplified" size="1" type="populationList">
+            <property tag="region" value="L23"/>
+            <property tag="color" value="0.6 0 0"/>
+            <instance id="0">
+                <location x="0." y="0." z="0."/>
+            </instance>
+        </population>
+        <inputList id="hyp_input" population="Pop_PC_simplified" component="constant_hyperpolarizing_current">
+            <input id="0" target="../Pop_PC_simplified/0/L23_PC_simplified" destination="synapses"/>
+        </inputList>
+        <inputList id="step_input" population="Pop_PC_simplified" component="transient_pulse_current">
+            <input id="0" target="../Pop_PC_simplified/0/L23_PC_simplified" destination="synapses"/>
+        </inputList>
+    </network>
+</neuroml>
