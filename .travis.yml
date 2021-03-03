@@ -1,22 +1,21 @@
-sudo: false
+
+dist: bionic
 
 addons:
    apt:
      packages:
      # Requirements for NetPyNE & libNeuroML
      - python-tk
-     - python-lxml 
-     - python-scipy 
-     - python-matplotlib 
+     - python-lxml
+     - python-scipy
+     - python-matplotlib
      - python-tornado
-    
+
 
 language: python
-python: 2.7
-
- 
-virtualenv:
-   system_site_packages: true
+python:
+  - 2.7
+  - 3.7
 
 
 env:
@@ -25,12 +24,8 @@ env:
     - OMV_ENGINE=jNeuroML_NetPyNE
     - OMV_ENGINE=jNeuroML_validate
 
-install: 
+install:
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
 
 script:
     - omv all -V
-    
-    
-    
-
