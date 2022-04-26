@@ -1,5 +1,7 @@
 # L2/3 Pyramidal Cell Tutorial
 
+[![Continuous build using OMV](https://github.com/OpenSourceBrain/L23PyramidalCellTutorial/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/L23PyramidalCellTutorial/actions/workflows/omv-ci.yml)
+
 A tutorial introducing OSB's ability to visualise, analyse and simulate biophysically realistic, multicompartmental cells.
 
 Uses a detailed Layer 2/3 Pyramidal cell from the [Blue Brain Project Neocortical Microcircuit model](https://bbp.epfl.ch/nmc-portal/microcircuit) as an example.
@@ -8,4 +10,3 @@ Uses a detailed Layer 2/3 Pyramidal cell from the [Blue Brain Project Neocortica
 
 ![Screenshot](https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/images/L23.png)
 
-[![Build Status](https://travis-ci.com/OpenSourceBrain/L23PyramidalCellTutorial.svg?branch=master)](https://travis-ci.com/OpenSourceBrain/L23PyramidalCellTutorial)
