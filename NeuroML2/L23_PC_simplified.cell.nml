@@ -7077,6 +7077,7 @@ Simplified version of a cell from the BBP NeocorticalMicrocircuit Collaboration 
                 <channelDensityNernst id="somatic_gCa_LVAstbar_Ca_LVAst" ionChannel="Ca_LVAst" condDensity="0.000778 S_per_cm2" segmentGroup="somatic" ion="ca"/>
                 -->
                 
+                <spikeThresh value="10mV"/>
                 <specificCapacitance value="2.0 uF_per_cm2" segmentGroup="all"/>
                 
                 <initMembPotential value="-80 mV"/>

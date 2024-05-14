@@ -7081,6 +7081,7 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
                 </channelDensityNonUniform>
                 
                
+                <spikeThresh value="10mV"/>
                 <specificCapacitance value="2 uF_per_cm2" segmentGroup="basal"/>
                 <specificCapacitance value="2 uF_per_cm2" segmentGroup="apical"/>
                 <specificCapacitance value="1.0 uF_per_cm2" segmentGroup="axonal"/>
